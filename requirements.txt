@@ -1,0 +1,12 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.5
+networkx>=3.3
+ase>=3.23
+matminer>=0.9
+jarvis-tools>=2024.8.3
+torch>=2.3
+tqdm>=4.66
+requests>=2.32
