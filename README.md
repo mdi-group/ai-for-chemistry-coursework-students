@@ -10,8 +10,8 @@ Students can run everything on Google Colab or locally.
 2. In the first cell of **either** notebook, run:
 
 ```bash
-!git clone https://github.com/mdi-group/ai-for-chemistry-coursework.git
-%cd ai-for-chemistry-coursework
+!git clone https://github.com/mdi-group/ai-for-chemistry-coursework-students.git
+%cd ai-for-chemistry-coursework-students
 !bash scripts/setup_colab.sh
 ```
 
