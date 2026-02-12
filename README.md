@@ -32,6 +32,8 @@ There is a helper function to assist with converting the dataframe that you have
 
 ```
 from src.utils import add_composition_column
+from matminer.featurizers.composition import ElementProperty
+
 df = add_composition_column(df)
 ep_feat = ElementProperty.from_preset(preset_name="magpie")
 df_with_features = ep_feat.featurize_dataframe(df, col_id="composition")
