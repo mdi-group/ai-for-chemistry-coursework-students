@@ -26,6 +26,17 @@ Students can run everything on Google Colab or locally.
 
 5. **Important note** if you are restarting the coursework you will have to save the unique dataset pkl file that you generated and load it back up - i.e. you do not need to run the `!python scripts/download-setup-unique-dataset.py` command. You will have to clone the repo and setup the colab environment each time though.
 
+## Building features
+
+There is a helper function to assist with converting the dataframe that you have into some kind of features. To use it follow this code:
+
+```
+from src.utils import add_composition_column
+df = add_composition_column(df)
+ep_feat = ElementProperty.from_preset(preset_name="magpie")
+df_with_features = ep_feat.featurize_dataframe(df, col_id="composition")
+```
+
 ## Quick start (local)
 
 ```bash
